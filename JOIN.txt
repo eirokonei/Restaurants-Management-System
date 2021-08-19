@@ -1,0 +1,11 @@
+Que-01:Display customer name,contact no and restaurant name
+
+Ans:SELECT C.CUSNAME,C.CNTNO,R.RNAME FROM CUSTOMER C,RESTAURANT R WHERE C.RID=R.RID
+
+Que-02:Display waiter name who takes order
+
+Ans:SELECT W.WNAME FROM WAITER W,FOOD F WHERE W.ORDER_NO=F.ORDER_NO
+
+Que-03:Dispaly foods,food_no which ordered by customes
+
+Ans:SELECT F.DESCRIPTION,F.FOOD_NO,W.CUSID FROM FOOD F,WAITER W WHERE F.ORDER_NO=W.ORDER_NO 
